@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  list-style: none;
 }
 /*Common CSS*/
 .common-btn {
@@ -70,7 +71,6 @@ nav .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
   position: relative;
 }
 .hero::after {
@@ -88,16 +88,183 @@ nav .btn {
   z-index: 1;
 }
 .hero div h1 {
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 20px;
 }
 .hero div p {
-  width: 80%;
+  width: 78%;
   margin: 0 auto 160px;
   font-size: 22px;
 }
 .hero div .cta {
-   font-size: 24px;
-   width: 274px;
-   height: 74px;
+  font-size: 24px;
+  width: 274px;
+  height: 74px;
+}
+
+/*Meet the speakers section CSS*/
+.meet-the-speaker {
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.eyebrow {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 56px;
+  color: #000102;
+}
+
+.speaker-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.card {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px 12px 0 0;
+}
+.details {
+  padding: 24px;
+}
+.details * {
+  margin-bottom: 8px;
+}
+.details h5 {
+  text-transform: uppercase;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 12px;
+}
+.details h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0d1b2a;
+}
+.details p {
+  font-size: 14px;
+  color: #575757;
+}
+
+/*Pricing Card CSS*/
+.pricing-card {
+  margin-bottom: 20px;
+  padding: 0 60px 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing-eyebrow {
+  text-align: center;
+}
+.pricing-eyebrow h2 {
+  font-weight: bold;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+.pricing-eyebrow p {
+  color: #575757;
+}
+.price-cards {
+  padding: 48px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.price-card {
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-details p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #888888;
+}
+.top-details h3 {
+  font-weight: bold;
+  font-size: 44px;
+  color: #0d1b2a;
+}
+.top-details span {
+  font-size: 13px;
+  color: #888888;
+}
+hr {
+  color: #e5e7eb;
+}
+
+.list ul li::before {
+  content: "●";
+  color: #2563eb;
+  margin-right: 10px;
+}
+.list ul li {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.list ul:last-child {
+  margin-bottom: 0;
+}
+
+.price-card button {
+  width: 100%;
+  border: 2px solid #2563eb;
+  padding: 11px 0;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+/*Middle Card CSS*/
+.price-card:nth-child(2) {
+   background-color: #0d1b2a;
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-card:nth-child(2) .top-details p{
+   color: #93C5FD;
+}
+.price-card:nth-child(2) .top-details h3,span{
+   color: #FFFFFF;
+}
+.price-card:nth-child(2) .list ul li::before{
+   color: #60A5FA;
+}
+.price-card:nth-child(2) .list ul li{
+   color: #FFFFFF;
+}
+.price-card:nth-child(2) button{
+   background-color: #2563eb;
+   color: #FFFFFF;
+}
+
+.price-card .team-card-btn{
+   border:2px solid #0d1b2a ;
+   color: #0d1b2a;
+}
+.price-card:nth-child(3){
+   background-color: #F8F9FB;
 }
