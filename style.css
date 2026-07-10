@@ -16,6 +16,10 @@
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.common-btn:hover {
+  transform: scale(1.1);
 }
 
 /*Header */
@@ -50,6 +54,11 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #575757;
+  transition:all 0.3s ease;
+}
+nav ul li a:hover {
+  color: #1d4ed8;
+  font-size: 1.1rem;
 }
 
 nav ul li .dif-font {
@@ -239,11 +248,16 @@ hr {
   font-size: 14px;
   color: #2563eb;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.price-card button:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
 }
 
 /*Middle Card CSS*/
 .price-card:nth-child(2) {
-   background-color: #0d1b2a;
+  background-color: #0d1b2a;
   border: 1px solid #e5e7eb;
   padding: 32px;
   border-radius: 12px;
@@ -252,29 +266,43 @@ hr {
   gap: 20px;
 }
 
-.price-card:nth-child(2) .top-details p{
-   color: #93C5FD;
+.price-card:nth-child(2) .top-details p {
+  color: #93c5fd;
 }
-.price-card:nth-child(2) .top-details h3,span{
-   color: #FFFFFF;
+.price-card:nth-child(2) .top-details h3,
+span {
+  color: #ffffff;
 }
-.price-card:nth-child(2) .list ul li::before{
-   color: #60A5FA;
+.price-card:nth-child(2) .list ul li::before {
+  color: #60a5fa;
 }
-.price-card:nth-child(2) .list ul li{
-   color: #FFFFFF;
+.price-card:nth-child(2) .list ul li {
+  color: #ffffff;
 }
-.price-card:nth-child(2) button{
-   background-color: #2563eb;
-   color: #FFFFFF;
+.price-card:nth-child(2) button {
+  background-color: #2563eb;
+  color: #ffffff;
+      border: none;
+  transition: all 0.3s ease;
+}
+.price-card:nth-child(2) button:hover {
+    background-color: #60a5fa;
+
+
 }
 
-.price-card .team-card-btn{
-   border:2px solid #0d1b2a ;
-   color: #0d1b2a;
+.price-card .team-card-btn {
+  border: 2px solid #0d1b2a;
+  color: #0d1b2a;
+    transition: all 0.3s ease;
 }
-.price-card:nth-child(3){
-   background-color: #F8F9FB;
+.price-card .team-card-btn:hover{
+  border: 2px solid #0d1b2a;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+.price-card:nth-child(3) {
+  background-color: #f8f9fb;
 }
 
 /*Challenge Part CSS*/
@@ -292,9 +320,9 @@ hr {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #0d1b2a; 
+  color: #0d1b2a;
 }
-.schedule-tagline{
+.schedule-tagline {
   font-size: 13px;
   color: #575757;
   margin-bottom: 50px;
@@ -316,7 +344,7 @@ hr {
   background-color: #0d1b2a;
   border-radius: 12px;
   padding: 30px;
-  border-left: 5px solid #60A5FA;
+  border-left: 5px solid #60a5fa;
   transition: transform 0.2s ease;
 }
 
@@ -373,39 +401,47 @@ hr {
   color: #64748b;
 }
 
-
 /*Footer CSS*/
-footer{
+footer {
   background-color: #0d1b2a;
   padding: 56px 60px 32px;
 }
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
 }
-hr{
+hr {
   color: #999999;
 }
-.logo-side img{
+.logo-side img {
   width: 70%;
 }
-.social-media-links a{
+.social-media-links a {
   margin-left: 15px;
 }
-.social-media-links a i{
+.social-media-links a i {
   color: #94a3b8;
   font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.social-media-links a i:hover {
+  color: #2563eb;
+  transform: scale(1.5);
 }
 
-.copy-right-message{
+.copy-right-message {
   color: #d6d6d6ab;
   font-size: 13px;
 }
-.privacy-terms a{
+.privacy-terms a {
   text-decoration: none;
   color: #d6d6d6ab;
   margin-left: 15px;
-    font-size: 13px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.privacy-terms a:hover {
+  text-decoration: underline;
 }
