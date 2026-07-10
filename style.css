@@ -365,3 +365,39 @@ hr {
   color: #64748b;
 }
 
+
+/*Footer CSS*/
+footer{
+  background-color: #0d1b2a;
+  padding: 56px 60px 32px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+hr{
+  color: #999999;
+}
+.logo-side img{
+  width: 70%;
+}
+.social-media-links a{
+  margin-left: 15px;
+}
+.social-media-links a i{
+  color: #94a3b8;
+  font-size: 1.5rem;
+}
+
+.copy-right-message{
+  color: #d6d6d6ab;
+  font-size: 13px;
+}
+.privacy-terms a{
+  text-decoration: none;
+  color: #d6d6d6ab;
+  margin-left: 15px;
+    font-size: 13px;
+}
